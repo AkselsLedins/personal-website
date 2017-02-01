@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>Persona User Manual</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="dockbar navbar-fixed-top">
+    <menu class="main-menu">
+      <div class="container">
+        <div class="row">
+          <a href="../readme.html" class="man-brand span3"><span class="logotype">Persona</span> <span class="doc-title">User Manual</span></a>
+          <button id="open-close-menu" class="menu-btn btn-inverse"><span class="fui-list"></span></button>
+          <dl class="span8">
+            <dd><a href="../readme.html">overview</a>
+            </dd>
+            <dd><a class="active" href="setup.html">setup</a>
+            </dd>
+            <dd><a href="installation.html">installation</a>
+            </dd>
+            <dd><a href="credits.html">credits</a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </menu>
+    <menu class="sub-menu">
+      <div class="container">
+        <div class="row">
+          <span class="sm-title span3">components</span>
+          <dl class="span9">
+            <dd><a href="#section1">Color Skin</a>
+            </dd>
+            <dd><a href="#section2">Retina Logo</a>
+            </dd>
+            <dd><a href="#section3">Navigation</a>
+            </dd>
+            <dd><a href="#section4">Skill Bars</a>
+            </dd>
+            <dd><a href="#section5">Portfolio</a>
+            </dd>
+            <dd><a href="#section6">Timeline</a>
+            </dd>
+            <dd><a href="#section7">Contact Form</a>
+            </dd>
+            <dd><a href="#section8">Icons</a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </menu>
+  </nav>
+
+   <section id="section1" class="manual-pages">
+    <div class="container">
+      <div class="row">
+        <div class="span9" style="margin-top: 95px;">
+          <h2>Color Skin</h2>
+          <p>After you've chosen which version of Persona to go with (either dark or light) it's time to choose the color skin.</p>
+          <p>The default skin is the ruby red color, but you can change this by removing the comment tags <code>&lt;!-- --&gt;</code> around the color skin CSS file in your <tt>index.html</tt> <code>&lt;head&gt;</code> section.</p>
+          <img src="images/color-head.png" style="margin-top: 40px;">
+          <p>Each grayed out line represents a color skin. If you chose the rose-pink color skin for instance you will be left with the following after removing the comment tags:</p>
+          <img src="images/color-head2.png" style="margin-top: 40px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="manual-pages">
+    <div class="container">
+      <div class="row">
+        <div class="span9" style="margin-top: 95px;">
+          <h2>Retina Logo</h2>
+          <p>For retina support on some images (such as the logo) we use a little script that automatically determines whether the device is retina capable and based on that loads a higher resoluion image if one is provided.</p>
+          <p>So to setup your images with retina capability you will need to provide two files - <tt>logo.png</tt> (your logo in normal resolution) and <tt>logo@2x.png</tt> (your logo in twice the resolution for retina devices). After you have your files just replace the ones that already exist in the <tt>/images</tt> folder of Persona.</p>
+          <img src="images/retina.png" style="margin-top: 40px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section3" class="manual-pages">
+    <div class="container">
+      <div class="row">
+        <div class="span9" style="margin-top: 95px;">
+          <h2>Navigation</h2>
+          <p>The navigation that is included in Persona is almost completely automatic. To have it functioning properly you'd just need to match the <tt>href</tt> attribute of the links in your navigation to the ID of the section that it navigates to.</p>
+          <img src="images/navigation1.png" style="margin-top: 40px;">
+          <img src="images/navigation2.png" style="margin-top: 20px;">
+          <p>The last link with an ID of <tt>top</tt> has a scroll-to-top function. And the class <tt>offset</tt> is added to the links for section that overlap with the navigation or are too close to the top of the page when the navigation link is clicked.</p>
+          <img src="images/navigation3.png" style="margin-top: 40px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section4" class="manual-pages">
+    <div class="container">
+      <div class="row">
+        <div class="span9" style="margin-top: 95px;">
+          <h2>Skill Bars</h2>
+          <p>Persona includes a neat feature that animates a percentage bar based on a value you setup in the markup. To setup the percentages just head over to your <tt>index.html</tt> file and locate the skill bars in the about section.</p>
+          <img src="images/bars-markup.png" style="margin-top: 40px;">
+          <p>Now that you've located them just change the <tt>data-percent</tt> attribute of a skill bar to the percent which you desire to fill the bar with.</p>
+          <img src="images/bars-markup2.png" style="margin-top: 40px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section5" class="manual-pages">
+    <div class="container">
+      <div class="row">
+        <div class="span9" style="margin-top: 95px;">
+          <h2>Portfolio</h2>
+          <p>Setting up the portfolio requires you to setup two images for each of your projects. One of the images is the thumbnail which must be <strong>square</strong>. The height of your thumbnail must be always equal to the width. I recommend you just replace the provided images with your own, using the same dimensions if possible. After you've provided the thumbnail image, it appears twice in your markup. The first time as a fallback for browsers that don't support the 3D effect, the second time for browsers that support the effect.</p>
+          <img src="images/portfolio1.png" style="margin-top: 40px;">
+          <p>The second image you need to setup is for the lightbox. Just change the <tt>href</tt> attribute of the link in your project container, to the path of your project image.</p>
+          <img src="images/portfolio2.png" style="margin-top: 40px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section6" class="manual-pages">
+    <div class="container">
+      <div class="row">
+        <div class="span9" style="margin-top: 95px;">
+          <h2>Timeline</h2>
+          <p>The experience timeline is a simple markup setup. Just fill in your information in place of the one provided in your <tt>index.html</tt> file. The only specific is that the first entry has the class of <tt>on</tt>, this gives the lates entry in your timeline a little accent color. Just make sure that it is always appended only for the firs entry.</p>
+          <img src="images/timeline.png" style="margin-top: 40px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section7" class="manual-pages">
+    <div class="container">
+      <div class="row">
+        <div class="span9" style="margin-top: 95px;">
+          <h2>Contact Form</h2>
+          <p>To setup the contact form just enter your email in the disagnated place in your <tt>contact.php</tt> file.</p>
+          <img src="images/contact.png" style="margin-top: 40px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section8" class="manual-pages">
+    <div class="container">
+      <div class="row">
+        <div class="span9" style="margin-top: 95px;">
+          <h2>Icons</h2>
+          <p>Persona includes a set of icons, which are utilized through the use of an icon font. Changing the icons is easy, it just requires a change of a class name to the icon element in your <tt>index.html</tt> markup.</p>
+          <img src="images/icons.png" style="margin-top: 40px;">
+          <p>You can find a list of the icons and their respective class names <a href="icon-reference/readme.html" target="_blank">here</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="manual-pages">
+    <div class="container">
+      <div class="row man-items">
+        <div class="span3">
+          <h3>Installation</h3>
+          <p>Installing Persona on your server is easy. Just a simple FTP upload.</p>
+          <a href="installation.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="span3">
+          <h3>Credits</h3>
+          <p>Take a look at some of the resources that we used to create Persona.</p>
+          <a href="credits.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="span3">
+          <h3>Have a Question?</h3>
+          <p>If you need some help just head over to the support forums.</p>
+          <a href="http://aether.ticksy.com" target="_blank" class="learn-more">Support Centre</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.scrollto.js"></script>
+  <script src="js/jquery.localscroll.js"></script>
+  <script src="js/prism.js"></script>
+</body>
+</html>
