@@ -10,7 +10,7 @@ const Timeline = ({ data, on }) => {
 					{ data.map( (i, idx) =>
 						<TimelineItem
 							key={`pro-${idx}`}
-							period={i.period} company={i.company} position={i.position} color="#F44336"
+							period={i.period} where={i.where} what={i.what}
 						/>
 					)}
 				</div>

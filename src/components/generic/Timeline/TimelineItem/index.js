@@ -1,20 +1,21 @@
 import React, { PropTypes as T } from 'react';
 import pure from 'recompose/pure';
 
-const TimelineItem = ({ period, company, position, color }) => {
+const TimelineItem = ({ period, where, what, color }) => {
 	return (
 		<div className="entry">
 			<div className="time on">{period}</div>
-			<div className="content"><span className="strong">{company}</span><br />{position}</div>
+			<div className="content"><span className="strong">{where}</span><br />
+				{what}
+			</div>
 		</div>
 	);
 }
 
 TimelineItem.propTypes = {
   period: T.string.isRequired,
-  company: T.string.isRequired,
-  position: T.string.isRequired,
-	color: T.string.isRequired,
+  where: T.string.isRequired,
+  what: T.string.isRequired,
 }
 
 export default pure(TimelineItem);
