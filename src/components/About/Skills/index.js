@@ -12,7 +12,7 @@ const Skills = () => (
     {/* Languages */}
     <div className="row">
       <div className="col-xs-12 col-lg-8 col-lg-offset-2">
-        <h3>Dev. languages</h3>
+        <h3>dev. languages</h3>
         { dataDev.map(i => <Bar key={`${i.name}-skill`} name={i.name} value={i.value} />) }
       </div>
     </div>
@@ -20,7 +20,7 @@ const Skills = () => (
     {/* Others skills - not exhaustive */}
     <div className="row">
       <div className="col-xs-12 col-lg-8 col-lg-offset-2">
-        <h3>Others</h3>
+        <h3>others</h3>
         { dataOthers.map(i => <Bar key={`${i.name}-skill`} name={i.name} value={i.value} color={'#2196F3'} />) }
       </div>
     </div>
