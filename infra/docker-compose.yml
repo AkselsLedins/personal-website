@@ -1,0 +1,10 @@
+# -------------
+front:
+# -------------
+  image: node:6.3.1
+  ports:
+    - '7998:3000'
+  volumes:
+    - ../client:/app
+  working_dir: /app
+  command: npm run start
