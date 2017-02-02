@@ -3,7 +3,7 @@ import Waypoint from 'react-waypoint';
 import pure from 'recompose/pure';
 
 import Title from '../generic/Title';
-import Timeline from '../Timeline';
+import Timeline from '../generic/Timeline';
 import data from './data';
 
 class Education extends React.Component {
@@ -12,7 +12,7 @@ class Education extends React.Component {
 
   render() {
     return (
-			<section id="section3">
+			<section id="section4">
 		    <Waypoint onEnter={() => this.setState({ on: true })} />
 
         <Title title="education" />

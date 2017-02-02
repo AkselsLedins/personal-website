@@ -3,7 +3,7 @@ import Waypoint from 'react-waypoint';
 import pure from 'recompose/pure';
 
 import Title from '../generic/Title';
-import Timeline from '../Timeline';
+import Timeline from '../generic/Timeline';
 import data from './data';
 
 class ProfessionalExperience extends React.Component {
