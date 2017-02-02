@@ -198,7 +198,7 @@ a:hover {
 
 .pageloader-fade {
 	opacity:0 !important;
-	
+
 	-webkit-transition: all .75s ease;
 	-moz-transition: all .75s ease;
 	-o-transition: all .75s ease;
@@ -228,7 +228,7 @@ a:hover {
 
 .pageloader-content-hide {
 	opacity:0 !important;
-	
+
 	-webkit-transition: all .25s ease;
 	-moz-transition: all .25s ease;
 	-o-transition: all .25s ease;
@@ -473,7 +473,7 @@ header .container {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	
+
 	.menu-button { right: 20px; }
 }
 
@@ -531,7 +531,7 @@ header .container {
 .hero {
 	display: block;
 	width: 100%;
-	background: url(../images/hero.jpg) no-repeat top;
+	/*background: url(../images/hero.jpg) no-repeat top;*/
 	background-size: cover;
 }
 
@@ -561,8 +561,8 @@ header .container {
   -webkit-transform-origin: center bottom;
   		  transform-origin: center bottom;
 
-	-webkit-animation: bounce 1.5s infinite; 
-	   -moz-animation: bounce 1.5s infinite; 
+	-webkit-animation: bounce 1.5s infinite;
+	   -moz-animation: bounce 1.5s infinite;
 		-ms-animation: bounce 1.5s infinite;
 		 -o-animation: bounce 1.5s infinite;
 			animation: bounce 1.5s infinite;
@@ -572,7 +572,7 @@ header .container {
 	opacity: 1;
 }
 
-/* Landscape Phones */ 
+/* Landscape Phones */
 @media only screen and (min-width : 480px) {
 	.logo {
 		margin-bottom: 10px;
@@ -699,7 +699,7 @@ header .container {
 	height: 100%;
 	border-radius: 5px;
 	overflow: hidden;
-	
+
 	-webkit-transform-style: preserve-3d;
 			transform-style: preserve-3d;
 }
@@ -708,7 +708,7 @@ header .container {
 	position: absolute;
 	width: 104%;
 	height: 104%;
-	top: -2%; 
+	top: -2%;
 	left: -2%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -724,7 +724,7 @@ header .container {
 
 .atvImg-shadow {
 	position: absolute;
-	top: 5%; 
+	top: 5%;
 	left: 5%;
 	width: 90%;
 	height: 90%;
@@ -740,9 +740,9 @@ header .container {
 
 .atvImg-shine {
 	position: absolute;
-	top: 0; 
-	left: 0; 
-	right: 0; 
+	top: 0;
+	left: 0;
+	right: 0;
 	bottom: 0;
 	-webkit-border-radius: 5px;
 	   -moz-border-radius: 5px;
@@ -842,7 +842,7 @@ header .container {
 			border-radius: 100%;
 }
 
-/* Landscape */ 
+/* Landscape */
 @media only screen and (min-width : 480px) {
 	.timeline .entry .time, .timeline .entry .content {
 		width: 50%;
@@ -988,7 +988,7 @@ fieldset label {
 	padding-top: 20px;
 }
 
-#success p { 
+#success p {
 	color: #00b426;
 	padding: 0;
 }
@@ -1004,7 +1004,7 @@ label.error {
 	color: #e72e62;
 	font-size: 10px;
 	text-transform: uppercase;
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 }
 
 
@@ -1096,7 +1096,7 @@ footer {
 
 /* =Responsive Styles
 -------------------------------------------------------------- */
-/* Landscape Phones */ 
+/* Landscape Phones */
 @media only screen and (min-width : 480px) {
 
 }
