@@ -24,31 +24,33 @@ export default [
     name: 'Koloy',
     git: '',
     imgSrc: '/images/projects/koloy.png',
-    desc: { __html: '<span>Koloy allows the update of <strong>docker apps</strong> from an api and a web interface, <strong>without having to connecting to SSH to the VPS</strong>.<br/><strong>Easy update & build & deploy</strong> of (new) apps !'+
-								'It also allows monitoring of our servers.<br/>Some features are still in development, however we use it for our final year study project (Playarshop). It allows the members of my group to easily update our application on our servers, they are very <strong>happy</strong> !</span><br/>'+
-                '<span>ReactJS, Hapi (nodejs), Lab (unit test), MongoDB </span>'+
-								'<br/><span><a href="http://git.aksels.me/koloy/back">Back <strong>source here</strong></a></span>'+
-              	'<br/><span><a href="http://git.aksels.me/koloy/front">Front <strong>source here</strong></a></span>'},
+    desc: { __html: '<span>Koloy allows the update of <strong>docker apps</strong> from an api and a web interface, <strong>without having to connecting to SSH to the VPS</strong>.<br/>'+
+								'We used it for our final year study project (PlayArShop). It allows to my group to easily update our application on our servers, they are very <strong>happy</strong> !</span><br/>'+
+              	'<br/><span><a href="http://git.aksels.me">Front <strong>source here</strong></a></span>'
+          },
   },
   {
     key: '3',
     name: 'PlayArShop',
     git: '',
     imgSrc: '/images/projects/playarshop.jpg',
-    desc: { __html: '<span>Augmented Reality, Vuforia, C#, Unity, AngularJS 2, Ruby</span>'},
+    desc: { __html: '<span>Augmented Reality, Vuforia, C#, Unity, AngularJS 2, Ruby!'+
+								'It also allows monitoring of our servers.<br/>Some features are still in development, however we use it for our final year study project (Playarshop). It allows the members of my group to easily update our application on our servers, they are very <strong>happy</strong> !</span><br/>'+
+                '<span>ReactJS, Hapi (nodejs), Lab (unit test), MongoDB </span><br />'
+          },
   },
   {
     key: '4',
-    name: '',
+    name: 'Foo',
     git: '',
     imgSrc: '',
-    desc: { __html: ''},
+    desc: { __html: '<span>ok</span>'},
   },
   {
     key: '5',
-    name: '',
+    name: 'foo',
     git: '',
     imgSrc: '',
-    desc: { __html: ''},
+    desc: { __html: '<span>ok</span>'},
   }
 ];

@@ -8,6 +8,7 @@ import atvImg from './atv';
 
 // components
 import Project from './Project';
+import Title from '../generic/Title';
 
 // data
 import data from './data';
@@ -32,11 +33,7 @@ class Projects extends React.Component {
       <section id="section2">
 
   			{/* Title */}
-  			<div className="row padded-top">
-  				<div className="col-xs-12 col-lg-8 col-lg-offset-2">
-  					<h2>some projects</h2>
-  				</div>
-  			</div>
+        <Title title="some projects" />
 
         {/* Gallery */}
   			<div className="row padded-bottom">
