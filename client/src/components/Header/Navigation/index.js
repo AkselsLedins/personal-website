@@ -5,7 +5,7 @@ import NavLink from './../NavLink';
 
 const menu = [
   { href: '#section1', label: 'about' },
-  { href: '#section2', label: 'some projects' },
+  { href: '#section2', label: 'projects' },
   { href: '#section3', label: 'experience' },
   { href: '#section4', label: 'clients' },
   { href: '#section5', label: 'contact' },
