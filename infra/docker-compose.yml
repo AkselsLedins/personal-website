@@ -1,0 +1,23 @@
+# -------------
+front:
+# -------------
+  image: node:6.3.1
+  ports:
+    - '7998:3000'
+  volumes:
+    - ../client:/app
+  working_dir: /app
+  command: npm run start
+
+# -------------
+back:
+# -------------
+  build: ../back
+  env_file:
+    - ../back/.env.development
+  ports:
+    - '7997:3000'
+  volumes:
+    - ../back:/app
+  working_dir: /app
+  command: npm run start

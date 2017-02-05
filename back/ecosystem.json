@@ -1,0 +1,10 @@
+{
+  "apps" : [{
+    "name"        : "pw-back",
+    "script"      : "server.js",
+    "ignore_watch": [".git", "logs", "node_modules", ".tmp", "data", "*.log", ".idea"],
+    "env": {
+      "NODE_PATH": ".",
+    }
+  }]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "personal-website",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "fbjs": "^0.8.9",
+    "jquery": "^3.1.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-google-recaptcha": "^0.5.4",
+    "react-scrollchor": "^2.2.0",
+    "react-waypoint": "^5.0.3",
+    "recompose": "^0.22.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

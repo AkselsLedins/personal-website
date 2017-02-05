@@ -1,0 +1,7 @@
+front:
+  command: npm run start
+  image: 'aksels/personal-website'
+  ports:
+    - '7997:3000'
+  tags:
+    - production
