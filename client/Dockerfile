@@ -17,3 +17,4 @@ COPY . /src/front
 EXPOSE 3000
 
 RUN npm install pm2@2.0.x yarn -g
+RUN npm install
