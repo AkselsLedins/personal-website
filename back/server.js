@@ -22,6 +22,7 @@ app.use(expValid([]));
 
 // Helper function to make API call to recatpcha and check response
 function verifyRecaptcha(key, callback) {
+  console.log('secret is', config.recaptchaSecret);
   https.get("https://www.google.com/recaptcha/api/siteverify?secret=" + config.recaptchaSecret + "&response=" + key, function(res) {
     var data = "";
     res.on('data', function (chunk) {
