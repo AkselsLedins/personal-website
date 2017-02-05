@@ -40,15 +40,15 @@ export default [
             'The merchant can offer reductions through mini-games (augmented reality).'
           },
   },
-  {
-    key: '4',
-    name: 'GO - URL Shortener',
-    git: '',
-    imgSrc: '/images/projects/urlakselsme.jpg',
-    tags: ['Go', 'React'],
-    desc: { __html:
-  					'<span><a href="http://git.aksels.me/url-shortener/chrome-extension">Chrome extension source here</a></span>'+
-  					'<span><a href="http://git.aksels.me/url-shortener/main">Back &amp; Front source here</a></span>'
-          },
-  },
+  // {
+  //   key: '4',
+  //   name: 'GO - URL Shortener',
+  //   git: '',
+  //   imgSrc: '/images/projects/urlakselsme.jpg',
+  //   tags: ['Go', 'React'],
+  //   desc: { __html:
+  // 					'<span><a href="http://git.aksels.me/url-shortener/chrome-extension">Chrome extension source here</a></span>'+
+  // 					'<span><a href="http://git.aksels.me/url-shortener/main">Back &amp; Front source here</a></span>'
+  //         },
+  // },
 ];
