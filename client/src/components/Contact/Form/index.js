@@ -35,7 +35,7 @@ class Form extends React.Component {
       }
     }
         /* send the request */
-    x.open('POST', 'http://localhost:7997/contact', true );
+    x.open('POST', 'http://aksels.me:7997/contact', true );
     x.setRequestHeader('Content-type', 'application/json');
 
     x.send( JSON.stringify( this.state.data ) );
