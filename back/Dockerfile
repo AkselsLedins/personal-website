@@ -10,6 +10,3 @@ EXPOSE 3000
 WORKDIR /app
 
 RUN npm install pm2@2.0.x yarn -g
-
-# Start process.yml
-CMD ["npm", "run", "start"]
