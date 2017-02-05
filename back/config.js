@@ -1,10 +1,10 @@
 var config = {}
 
 config.emailService = 'Gmail';
-config.email = 'aksels.ledins@gmail.com';
-config.emailPwd = '';
+config.email = process.env.EMAIL;
+config.emailPwd = process.env.EMAIL_PASSWORD
 config.emailTag = '[aksels.me]';
 
-config.recaptchaSecret = '';
+config.recaptchaSecret = process.env.RECAPTCHA_SECRET;
 
 module.exports = config;
