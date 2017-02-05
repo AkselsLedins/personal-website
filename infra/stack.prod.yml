@@ -1,6 +1,24 @@
 front:
+  image: 'aksels/personal-website-client:latest'
   command: npm run start
-  image: 'aksels/personal-website'
+  ports:
+    - '7997:3000'
+  tags:
+    - production
+
+back:
+  command: npm run start
+  image: 'aksels/personal-website-back:latest'
+  environment:
+    - NODE_ENV=production
+    - PORT=3000
+    - NODE_PATH=.
+    - PM2_CONFIG=ecosystem.json
+    - PM2_WATCH=false
+    - PM2_LOG_FORMAT=json
+    - RECAPTCHA_SECRET=''
+    - EMAIL=''
+    - EMAIL_PASSWORD=''
   ports:
     - '7997:3000'
   tags:
