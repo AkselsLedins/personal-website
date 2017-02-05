@@ -14,6 +14,7 @@ const Footer = () => (
 					<a target="_blank" href="https://twitter.com/AkselsLedins"><i className="social-icon-twitter"></i></a>
 					<a target="_blank" href="https://www.facebook.com/aksels.ledins"><i className="social-icon-facebook"></i></a>
 					<a target="_blank" href="https://www.instagram.com/aksels.ledins"><i className="social-icon-instagram"></i></a>
+					<a target="_blank" href="https://www.instagram.com/aksels.ledins"><i className="social-icon-flickr"></i></a>
 				</div>
 			</div>{/* END Social List */}
 
