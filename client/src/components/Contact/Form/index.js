@@ -123,18 +123,11 @@ class Form extends React.Component {
               sitekey="6LcBjR4TAAAAAPGttYPi7wVFO0FqYE4sREWlYinE"
               onChange={this.GRChange}
             />
-            <input id="submit" type="submit" name="submit" value="Send Message" />
+
+            <input id="submit" type="submit" name="submit" value="Send Message" style={{ paddingTop: 42 }}/>
 
           </fieldset>
         </form>
-
-        <div id="success">
-          <p>Your message was sent successfully! I will be in touch as soon as I can.</p>
-        </div>
-
-        <div id="error">
-          <p>Something went wrong, try refreshing and submitting the form again.</p>
-        </div>
       </div>
     );
   }
