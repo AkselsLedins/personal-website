@@ -120,7 +120,7 @@ class Form extends React.Component {
             <textarea name="message" value={this.state.data.message} onChange={this.handleChange} />
             <ReCAPTCHA
               ref="recaptcha"
-              sitekey="6LcBjR4TAAAAAPGttYPi7wVFO0FqYE4sREWlYinE"
+              sitekey={process.env.REACT_APP_RECAPTCHA_PUBLIC_KEY}
               onChange={this.GRChange}
             />
 
