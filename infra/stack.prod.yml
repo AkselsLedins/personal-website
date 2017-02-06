@@ -1,6 +1,6 @@
 front:
-  image: 'aksels/personal-website-client:latest'
-  command: npm run start
+  image: 'aksels/personal-website-front:latest'
+  command: pushstate-server build
   environment:
     - NODE_ENV=production
     - PORT=3000
@@ -21,7 +21,7 @@ back:
     - PM2_CONFIG=ecosystem.json
     - PM2_WATCH=false
     - PM2_LOG_FORMAT=json
-    - RECAPTCHA_SECRET=''
+    - REACT_APP_RECAPTCHA_SECRET=''
     - EMAIL=''
     - EMAIL_PASSWORD=''
   ports:
