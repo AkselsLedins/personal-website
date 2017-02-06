@@ -19,4 +19,4 @@ EXPOSE 3000
 RUN npm install pm2@2.0.x yarn -g
 RUN npm install
 RUN yarnpkg build
-RUN yarn global add pushstate-serveryarnpkg build
+RUN yarn global add pushstate-server
