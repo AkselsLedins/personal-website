@@ -18,5 +18,6 @@ EXPOSE 3000
 
 RUN npm install pm2@2.0.x yarn -g
 RUN npm install
+RUN echo $REACT_APP_RECAPTCHA_PUBLIC_KEY
 RUN yarnpkg build
 RUN yarn global add pushstate-server
