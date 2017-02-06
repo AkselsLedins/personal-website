@@ -1,7 +1,7 @@
 {
-  "name": "personal-website",
-  "version": "0.1.0",
-  "private": true,
+  "name": "personal-website-frontend",
+  "version": "1.0.0",
+  "description": "aksels.me backend",
   "devDependencies": {
     "react-scripts": "0.8.5"
   },

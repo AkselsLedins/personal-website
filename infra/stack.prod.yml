@@ -1,6 +1,11 @@
 front:
   image: 'aksels/personal-website-client:latest'
   command: npm run start
+  environment:
+    - NODE_ENV=production
+    - PORT=3000
+    - NODE_PATH=.
+    - REACT_APP_RECAPTCHA_PUBLIC_KEY=''
   ports:
     - '7997:3000'
   tags:

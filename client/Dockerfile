@@ -17,4 +17,6 @@ COPY . /src/front
 EXPOSE 3000
 
 RUN npm install pm2@2.0.x yarn -g
-RUN npm install
+RUN npm install --production
+RUN yarnpkg build
+RUN yarn global add pushstate-serveryarnpkg build
