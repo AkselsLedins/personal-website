@@ -10,7 +10,7 @@ class Form extends React.Component {
 
   state = {
     editable: true,
-    data: { name: '', email: '', message: '', recaptchaValue: '' },
+    data: { name: '', email: '', message: '', recaptcha: '' },
     error: '',
     info: '',
   };
@@ -42,7 +42,7 @@ class Form extends React.Component {
   }
 
   validate = (data) => {
-    if (!this.state.data.recaptchaValue) {
+    if (!this.state.data.recaptcha) {
       this.setState({
         editable: true,
         error: 'Please fill the captcha',
@@ -93,7 +93,7 @@ class Form extends React.Component {
 
   GRChange = (value) => {
     this.setState(
-      { data: { ...this.state.data, recaptchaValue: value } }
+      { data: { ...this.state.data, recaptcha: value } }
     );
   }
 
