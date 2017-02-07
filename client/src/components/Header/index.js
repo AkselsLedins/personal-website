@@ -23,7 +23,7 @@ const Header = () => (
 
 				{/* Logo */}
 				<div className="col-xs-6 col-lg-2">
-					<img className="logo has-retina" src="images/logo.png" alt="Persona" />
+					<img className="logo has-retina" src="images/logo.png" alt="Aksels.me" />
 				</div>
 
 				{/* Nav Button */}
