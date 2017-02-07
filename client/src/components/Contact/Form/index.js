@@ -100,7 +100,7 @@ class Form extends React.Component {
   render() {
     return (
       <div className="col-xs-12 col-lg-8 col-lg-offset-2">
-        <h1><a href="mailto:aksels.ledins@gmail.com">aksels.ledins@gmail.com</a></h1>
+        <h1><a style={{ fontSize: '0.7em' }} href="mailto:aksels.ledins@gmail.com">aksels.ledins@gmail.com</a></h1>
         <p>Or just send me an email straight through here:</p>
 
         <form name="Form" onSubmit={this.handleSubmit}>
