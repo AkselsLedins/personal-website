@@ -1,6 +1,8 @@
 import React from 'react';
 import pure from 'recompose/pure';
 
+import ExternalLink from '../../generic/ExternalLink';
+
 const liClasses = 'col-xs-10 col-sm-5 col-lg-4';
 
 const Project = ({ name, git, imgSrc, desc, offset }) => (
@@ -13,6 +15,8 @@ const Project = ({ name, git, imgSrc, desc, offset }) => (
 			</div>
 		</a>
    <div dangerouslySetInnerHTML={desc} />
+	 <br />
+	 <div>Source <ExternalLink href={git}>Here</ExternalLink></div>
 	</li>
 );
 
