@@ -5,9 +5,12 @@ import ExternalLink from '../../generic/ExternalLink';
 
 const liClasses = 'col-xs-10 col-sm-5 col-lg-4';
 
-const Project = ({ name, git, imgSrc, desc, offset }) => (
+const Tag = ({ children }) => <small style={{fontWeight: 300}}>{` [${children}] `}</small>;
+
+const Project = ({ name, git, imgSrc, desc, offset, tags }) => (
 	<li className={`${liClasses} ${offset ? 'col-lg-offset-2 col-xs-offset-1 col-sm-offset-1' : ''}`}>
-    {name}
+    {name}<br />
+		<div>{ tags.map(text => <Tag key={text}>{text}</Tag>)}</div>
 		<a className="lightbox" href={git || '#'}>
 			<div className="atvImg">
 				<img src={imgSrc || 'images/portfolio/project1.jpg'} alt={`${name} preview`} />

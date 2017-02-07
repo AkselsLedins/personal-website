@@ -6,6 +6,7 @@ export default [
     name: 'Koloy',
     git: 'http://git.aksels.me/groups/koloy',
     imgSrc: '/images/projects/koloy.png',
+    tags: ['Docker', 'React', 'Node'],
     desc: { __html:
   					'Some features are still in development, however we used it for our final year study project.<br/>'+
             'Allowed my group to easily update our applications on our servers, they are very <b>happy</b> !'
@@ -40,5 +41,5 @@ export default [
     desc: { __html: '<span>A bomberman in 2D Iso we are programming at the moment with a friend on our free time.</span>'+
             '<span>C++, SFML, Game</span>'
           },
-  }, 
+  },
 ];
