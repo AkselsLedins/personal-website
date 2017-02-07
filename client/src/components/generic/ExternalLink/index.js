@@ -2,7 +2,7 @@ import React, { PropTypes as T } from 'react';
 import pure from 'recompose/pure';
 
 const ExternalLink = ({ href, children }) => (
-  <a target="_blank" href={href}>
+  <a target="_blank" href={href} style={{ cursor: 'pointer' }}>
     {children}
   </a>
 );
