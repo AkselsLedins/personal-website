@@ -19,7 +19,7 @@ const About = () => (
 					{'Feel free to checkout my '}<ExternalLink href="https://fr.linkedin.com/in/akselsledins">Linkedin</ExternalLink>
 					{' and my '}<ExternalLink href="https://github.com/AkselsLedins">Github</ExternalLink>
 					{'.. or some pictures on my '}<ExternalLink href="https://www.flickr.com/photos/aksels">Flickr</ExternalLink>
-					{'.'}
+					{'.. or my blog '}<ExternalLink href="http://aksels.io">aksels.io</ExternalLink>.
 				</p>
 
 			</div>
