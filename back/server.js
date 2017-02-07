@@ -85,7 +85,7 @@ app.post('/contact', function (req, res) {
         return res.status(401).json({ msg: sen.err.reCaptcha })
     } else {
 
-      var textToSend = req.body.content + '\n' +
+      var textToSend = req.body.message + '\n' +
         req.body.email + '\n' +
         req.body.name;
 
