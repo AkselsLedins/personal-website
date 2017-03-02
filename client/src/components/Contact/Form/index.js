@@ -50,14 +50,14 @@ class Form extends React.Component {
       });
       return false;
     }
-    if (!REGEX_EMAIL.test(this.state.data.email)) {
-      this.setState({
-        ...this.state,
-        editable: true,
-        error: 'Sorry it\'s not a valid email',
-      });
-      return false;
-    }
+    // if (!REGEX_EMAIL.test(this.state.data.email)) {
+    //   this.setState({
+    //     ...this.state,
+    //     editable: true,
+    //     error: 'Sorry it\'s not a valid email',
+    //   });
+    //   return false;
+    // }
     if (this.state.data.name.length < 3) {
       this.setState({
         ...this.state,
