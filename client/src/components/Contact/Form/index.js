@@ -44,6 +44,7 @@ class Form extends React.Component {
   validate = (data) => {
     if (!this.state.data.recaptcha) {
       this.setState({
+        ...this.state,
         editable: true,
         error: 'Please fill the captcha',
       });
@@ -51,6 +52,7 @@ class Form extends React.Component {
     }
     if (!REGEX_EMAIL.test(this.state.data.email)) {
       this.setState({
+        ...this.state,
         editable: true,
         error: 'Sorry it\'s not a valid email',
       });
@@ -58,6 +60,7 @@ class Form extends React.Component {
     }
     if (this.state.data.name.length < 3) {
       this.setState({
+        ...this.state,
         editable: true,
         error: 'Name: should be at least 3 characters ',
       });
@@ -65,6 +68,7 @@ class Form extends React.Component {
     }
     if (this.state.data.message.length < 4) {
       this.setState({
+        ...this.state,
         editable: true,
         error: 'Message: should be at least 4 characters',
       });
