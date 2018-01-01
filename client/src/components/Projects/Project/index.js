@@ -17,6 +17,7 @@ const Project = ({ name, git, imgSrc, desc, offset, tags }) => (
 				<div className="atvImg-layer" data-img={imgSrc || 'images/portfolio/project1.jpg'} />
 			</div>
 		</a>
+	 <br />
    <div dangerouslySetInnerHTML={desc} />
 	 <br />
 	 <div>Source <ExternalLink href={git}>Here</ExternalLink></div>

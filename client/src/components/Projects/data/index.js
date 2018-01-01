@@ -1,8 +1,26 @@
 
 export default [
-
   {
-    key: '2',
+    name: 'Lowside.io',
+    git: 'https://github.com/lowsideio',
+    imgSrc: '/images/projects/lowside.jpg',
+    tags: ['Docker', 'GoLang', 'VueJS', 'Crawlers', 'Scrapper'],
+    desc: { __html:
+  					'Open data on all motorcycles of the world.<br/>'+
+            'Easily searchable and open-source.'
+          },
+  },
+  {
+    name: 'Redstun',
+    git: 'https://redstun.com',
+    imgSrc: '/images/projects/redstun.jpg',
+    tags: ['Docker', 'Node', 'VueJS'],
+    desc: { __html:
+  					'ITC Venom & Iberverin gel technology.<br/>'+
+            'The most powerful & innovative tear gas in the world !'
+          },
+  },
+  {
     name: 'Koloy',
     git: 'http://git.aksels.me/groups/koloy',
     imgSrc: '/images/projects/koloy.png',
@@ -13,7 +31,6 @@ export default [
           },
   },
   {
-    key: '3',
     name: 'PlayArShop',
     git: 'https://github.com/PlayArShop',
     imgSrc: '/images/projects/playarshop.jpg',
@@ -24,7 +41,6 @@ export default [
           },
   },
   {
-    key: '0',
     name: 'Zappy',
     git: 'https://github.com/AkselsLedins/academic-zappy',
     imgSrc: 'images/projects/zappy.png',
@@ -33,7 +49,6 @@ export default [
           },
   },
   {
-    key: '1',
     name: 'Bomberman',
     git: 'https://github.com/titouancreach/bomberman',
     imgSrc: '/images/projects/bomberman.png',

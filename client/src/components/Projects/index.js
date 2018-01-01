@@ -38,7 +38,7 @@ class Projects extends React.Component {
         {/* Gallery */}
   			<div className="row padded-bottom">
   				<ul className="folio-list">
-            { data.map( (i, idx) => <Project {...i} offset={idx % 2 === 0} />)}
+            { data.map( (i, idx) => <Project key={i.git} {...i} offset={idx % 2 === 0} />)}
   				</ul>
   			</div>
 
